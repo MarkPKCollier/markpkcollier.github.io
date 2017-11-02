@@ -8,7 +8,7 @@ categories: tensorflow neural turing machine
 Several attempts to replicate the Neural Turing Machine(https://arxiv.org/abs/1410.5401) have reported problems with the gradients becoming NaN [[1](https://github.com/carpedm20/NTM-tensorflow), [2](https://github.com/snipsco/ntm-lasagne)]. This problem is caused by the sharpening operation defined by equation 9 in the [original paper](https://arxiv.org/pdf/1410.5401.pdf):
 
 $$
-w_t(i) \leftarrow \frac{\widetilde{w}_t(i)^{\sum_{j}^{} \gamma_t}}{\widetilde{w}_t(j)^{\gamma_t}}
+w_t(i) \leftarrow \frac{\tilde{w}_t(i)^{\sum_{j}^{} \gamma_t}}{\widetilde{w}_t(j)^{\gamma_t}}
 $$
 
 
